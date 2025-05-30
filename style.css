@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --color-GrayishBlue: hsl(218, 22%, 67%);
+  --color-LightGray: hsl(204, 43%, 93%);
+  --color-BrightYellow: hsl(71, 73%, 54%);
+  --color-Cyan: hsl(179, 62%, 43%);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.bod {
+  background-color: var(--color-LightGray);
+  margin: 20px 10px;
+  font-family: "Karla", sans-serif;
+}
+.join h1 {
+  color: var(--color-Cyan);
+  font-weight: 700;
+}
+.hassle {
+  padding-bottom: 15px;
+  color: var(--color-BrightYellow);
+}
+.join {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: var(--color-GrayishBlue);
+  border: 5px solid white;
+  padding: 20px 15px;
+  gap: 10px;
+  font-weight: 400;
+}
+@media (width > 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .join {
+    grid-column: 1 / span4;
+  }
+
+  .monthly {
+    grid-column: 1 / span 2;
+  }
+
+  .why {
+    grid-column: 3 / span 2;
+  }
+}
+.monthly {
+  display: flex;
+  flex-direction: column;
+  background-color: darkcyan;
+  color: white;
+  gap: 10px;
+  padding: 20px 15px;
+  font-size: smaller;
+}
+
+.dollar {
+  font-size: x-large;
+  font-weight: 700;
+}
+.monthly span {
+  color: var(--color-GrayishBlue);
+  font-size: small;
+  font-weight: 400;
+}
+.monthly button {
+  background-color: var(--color-BrightYellow);
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  /* width: 80%; */
+  padding: 10px 0px;
+  color: white;
+  font-size: small;
+  font-weight: 400;
+}
+
+.why {
+  background-color: var(--color-Cyan);
+  color: white;
+  padding: 20px 15px;
+  font-size: small;
+  font-weight: 400;
+}
+.why h2 {
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+.why div {
+  color: lightblue;
+}
